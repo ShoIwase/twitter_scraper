@@ -17,4 +17,9 @@ sudo apt-get install fonts-ipafont-gothic fonts-ipafont-mincho
 
 Firefox用の Driverをhttps://github.com/mozilla/geckodriver/releases からダウンロードして，解凍したフォルダの中にあるgeckodriver.exeを作業ディレクトリに配置する。またはPATHが通っているところに置く。
 
+### プログラムの実行
+```
+python scraping.py 07 01 07 02
+```
+とすると、2017年7月1日から2017年7月2日までのツイートを検索できる。
 ## 入手したHTMLからスクレイピング
