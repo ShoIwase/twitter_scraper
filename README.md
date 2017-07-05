@@ -19,7 +19,7 @@ Firefox用の Driverをhttps://github.com/mozilla/geckodriver/releases からダ
 
 ### プログラムの実行
 ```
-python scraping.py 07 01 07 02
+python scraping.py 07 01 07 02 > result.html
 ```
-とすると、2017年7月1日から2017年7月2日までのツイートを検索できる。
+とすると、2017年7月1日から2017年7月2日までのツイートを検索し、HTMLが保存される。
 ## 入手したHTMLからスクレイピング
