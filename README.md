@@ -39,5 +39,5 @@ sudo gem install nokogiri
 ```
 ### プログラムの実行
 ```
-ruby scrape_twitter.rb result.html
+ruby twitter_scrape.rb result.html
 ```
