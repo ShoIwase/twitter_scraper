@@ -26,6 +26,18 @@ export DISPLAY=:99
 
 例として以下のように実行すると2017年7月1日から2017年7月2日までのツイートを検索できる。
 ```
-python scraping.py 07 01 07 02 > result.html
+python twitter_scroll.py 07 01 07 02 > result.html
 ```
 ## 入手したHTMLからスクレイピング
+### スクレイピングの準備
+nokogiriを使うためインストールする。
+```
+sudo add-apt-repository -y ppa:brightbox/ruby-ng
+sudo apt-get update
+sudo apt-get -y install ruby2.1 ruby2.1-dev zlib1g-dev
+sudo gem install nokogiri
+```
+### プログラムの実行
+```
+ruby scrape_twitter.rb result.html
+```
