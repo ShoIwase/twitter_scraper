@@ -16,7 +16,7 @@ print url
 # ブラウザ起動
 driver = webdriver.Firefox()
 
-# twitter検索結果表示長い方
+# twitter検索結果表示
 driver.get(url)
 
 # 一番下までスクロール
@@ -33,8 +33,8 @@ while True:
 data = driver.page_source.encode('utf-8')
 print(data)
 
-# スクリーンショットを撮る
-driver.save_screenshot('sys_result.png')
+# 確認のためスクリーンショットを撮る
+driver.save_screenshot('result.png')
 
 # 終了
 driver.close()
