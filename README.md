@@ -15,7 +15,7 @@ sudo aptitude install xfonts-100dpi xfonts-75dpi xfonts-scalable xfonts-cyrillic
 sudo apt-get install fonts-ipafont-gothic fonts-ipafont-mincho
 ```
 
-Firefox用の Driverをhttps://github.com/mozilla/geckodriver/releases からダウンロードして，解凍したフォルダの中にあるgeckodriver.exeを作業ディレクトリに配置する。またはPATHが通っているところに置く。
+Firefox用の Driverをhttps://github.com/mozilla/geckodriver/releases からダウンロードして、解凍したフォルダの中にあるgeckodriver.exeを作業ディレクトリに配置する。またはPATHが通っているところに置く。
 
 ### プログラムの実行
 まずXvfbの起動とディプレイの設定をする。
