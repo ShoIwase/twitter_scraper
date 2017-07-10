@@ -9,7 +9,7 @@ argc = len(argv)
 print argv
 print argc
 
-url = 'https://twitter.com/search?f=tweets&q=github%20lang%3Aja%20since%3A2016-'+str(argv[1])+'-'+str(argv[2])+'_00%3A00%3A00_JST%20until%3A2016-'+str(argv[3])+'-'+str(argv[4])+'_00%3A00%3A00_JST&src=typd'
+url = 'https://twitter.com/search?f=tweets&q=github%20lang%3Aja%20since%3A2017-'+str(argv[1])+'-'+str(argv[2])+'_00%3A00%3A00_JST%20until%3A2017-'+str(argv[3])+'-'+str(argv[4])+'_00%3A00%3A00_JST&src=typd'
 
 print url
 
