@@ -26,7 +26,7 @@ export DISPLAY=:99
 
 例として以下のように実行すると2017年7月1日から2017年7月2日までのツイートを検索できる。
 ```
-python twitter_scroll.py 07 01 07 02 > result.html
+python twitter_scroll.py 2017 07 01 07 02 > result.html
 ```
 ## 入手したHTMLからスクレイピング
 ### スクレイピングの準備
