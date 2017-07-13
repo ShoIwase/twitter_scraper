@@ -38,6 +38,7 @@ sudo apt-get -y install ruby2.1 ruby2.1-dev zlib1g-dev
 sudo gem install nokogiri
 ```
 ### プログラムの実行
+保存したHTMLからツイートの時間と本文をスクレイピングする。
 ```
 ruby twitter_scrape.rb < result.html
 ```
