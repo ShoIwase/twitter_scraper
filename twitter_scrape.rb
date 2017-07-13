@@ -1,8 +1,7 @@
 ﻿# -*- coding: utf-8 -*-
 require 'nokogiri'
 
-filename = ARGV[0]
-file = File.open(filename)
+file = STDIN.read
 doc = Nokogiri::HTML(file)
 
 doc.xpath("//li[@data-item-type='tweet']").each{ |tweet|
@@ -10,6 +9,6 @@ doc.xpath("//li[@data-item-type='tweet']").each{ |tweet|
  puts Time.at(tweet.xpath(
   ".//a[@class='tweet-timestamp js-permalink js-nav js-tooltip']/span").first['data-time'].to_i)
   
-	# Tweet本文
-	puts tweet.xpath(".//p[@class='TweetTextSize  js-tweet-text tweet-text']").text
+ # Tweet本文
+ puts tweet.xpath(".//p[@class='TweetTextSize  js-tweet-text tweet-text']").text
 }

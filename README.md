@@ -39,5 +39,9 @@ sudo gem install nokogiri
 ```
 ### プログラムの実行
 ```
-ruby twitter_scrape.rb result.html
+ruby twitter_scrape.rb < result.html
+```
+2つの手順を1度に行う場合は以下の通りに実行する。
+```
+python twitter_scroll.py 2017 07 01 07 02 | ruby twitter_scrape.rb
 ```
