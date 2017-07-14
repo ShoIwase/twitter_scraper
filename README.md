@@ -30,7 +30,7 @@ python twitter_scroll.py 2017 07 01 07 02 > result.html
 ```
 ## 入手したHTMLからスクレイピング
 ### スクレイピングの準備
-nokogiriを使うためインストールする。
+Nokogiriを使うためインストールする。
 ```
 sudo add-apt-repository -y ppa:brightbox/ruby-ng
 sudo apt-get update
