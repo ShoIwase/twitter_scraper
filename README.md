@@ -13,6 +13,7 @@ sudo apt-get install python-selenium
 xvfbを使うと実際にスクリーンがない状態でも GUI が必要なソフトウェアを使える（下の2行はフォントのインストール）。
 ```
 sudo apt-get install firefox xvfb
+sudo apt-get install aptitude
 sudo aptitude install xfonts-100dpi xfonts-75dpi xfonts-scalable xfonts-cyrillic
 sudo apt-get install fonts-ipafont-gothic fonts-ipafont-mincho
 ```
