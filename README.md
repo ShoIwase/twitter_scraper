@@ -28,7 +28,7 @@ export DISPLAY=:99
 
 例として以下のように実行すると2017年7月1日から2017年7月2日までのツイートを検索できる。
 ```
-python twitter_scroll.py 2017 07 01 07 02 > result.html
+python scroll.py 2017 07 01 07 02 > result.html
 ```
 ## 入手したHTMLからスクレイピング
 ### スクレイピングの準備
@@ -42,9 +42,9 @@ sudo gem install nokogiri
 ### プログラムの実行
 保存したHTMLからツイートの時間と本文をスクレイピングする。
 ```
-ruby twitter_scrape.rb < result.html
+ruby scrape.rb < result.html
 ```
 2つの手順を1度に行う場合は以下の通りに実行する。
 ```
-python twitter_scroll.py 2017 07 01 07 02 | ruby twitter_scrape.rb
+python scroll.py 2017 07 01 07 02 | ruby scrape.rb
 ```
