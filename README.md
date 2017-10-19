@@ -4,7 +4,11 @@
 今回は「GitHub lang:ja」の日付指定検索で試す。
 
 ## 使用環境
-Ubuntu 14.04 LTS
+* ホストOS：Windows 10 64bit
+* ゲストOS：Ubuntu 14.04 LTS 64 bit
+
+（https://github.com/ShoIwase/i_machine にマシンを用意した）
+
 ## 検索結果の入手
 ### Seleniumのインストール
 Twitterの検索結果をスクロールするため、Seleniumを使う。
