@@ -6,6 +6,9 @@
 ## 使用環境
 * ホストOS：Windows 10 64bit
 * ゲストOS：Ubuntu 14.04 LTS 64 bit
+* Mozilla Firefox 56.0
+* geckodriver-v0.19.1
+* selenium-3.7.0
 
 （https://github.com/ShoIwase/i_machine にマシンを用意した）
 
@@ -27,8 +30,7 @@ sudo apt-get install fonts-ipafont-gothic fonts-ipafont-mincho
 
 Firefox用のDriverをhttps://github.com/mozilla/geckodriver/releases からダウンロードして、解凍したフォルダの中にあるgeckodriverを作業ディレクトリに配置する。またはPATHが通っているところに置く。
 
-（PATHの通ってるところに置く方法）
-`/vagrant`でgeckodriverを解凍し以下を実行する。
+（PATHの通ってるところに置く方法）geckodriverを解凍したフォルダで以下を実行する。
 
 ```
 sudo cp ./geckodriver /usr/local/bin
