@@ -13,7 +13,8 @@
 ### Seleniumのインストール
 Twitterの検索結果をスクロールするため、Seleniumを使う。
 ```
-sudo apt-get install python-selenium
+sudo apt-get install python-pip
+sudo pip install selenium
 ```
 
 ### Firefoxとバーチャルモニター（Xvfb）のインストール
@@ -24,8 +25,14 @@ sudo aptitude install xfonts-100dpi xfonts-75dpi xfonts-scalable xfonts-cyrillic
 sudo apt-get install fonts-ipafont-gothic fonts-ipafont-mincho
 ```
 
-Firefox用のDriverをhttps://github.com/mozilla/geckodriver/releases からダウンロードして、解凍したフォルダの中にあるgeckodriver.exeを作業ディレクトリに配置する。またはPATHが通っているところに置く。
+Firefox用のDriverをhttps://github.com/mozilla/geckodriver/releases からダウンロードして、解凍したフォルダの中にあるgeckodriverを作業ディレクトリに配置する。またはPATHが通っているところに置く。
 
+（PATHの通ってるところに置く方法）
+`/vagrant`でgeckodriverを解凍し以下を実行する。
+
+```
+sudo cp ./geckodriver /usr/local/bin
+```
 ### プログラムの実行
 まずXvfbの起動とディプレイの設定をする。
 ```
