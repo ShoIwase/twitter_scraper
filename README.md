@@ -16,7 +16,7 @@
 ### Seleniumのインストール
 Twitterの検索結果をスクロールするため、Seleniumを使う。
 ```
-sudo apt-get install python-pip
+sudo apt-get -y install python-pip
 sudo pip install selenium
 ```
 
