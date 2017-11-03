@@ -30,7 +30,7 @@ sudo apt-get install fonts-ipafont-gothic fonts-ipafont-mincho
 
 Firefox用のDriverをhttps://github.com/mozilla/geckodriver/releases からダウンロードして、解凍したフォルダの中にあるgeckodriverを作業ディレクトリに配置する。またはPATHが通っているところに置く。
 
-（PATHの通ってるところに置く場合）geckodriverを解凍したフォルダで以下を実行する。
+（PATHの通ってるところに置く場合）geckodriverを解凍したディレクトリで以下を実行する。
 
 ```
 sudo cp ./geckodriver /usr/local/bin
