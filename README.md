@@ -10,8 +10,6 @@
 * geckodriver-v0.19.1
 * selenium-3.7.0
 
-（https://github.com/ShoIwase/i_machine にマシンを用意した）
-
 ## 検索結果の入手
 ### Seleniumのインストール
 Twitterの検索結果をスクロールするため、Seleniumを使う。
