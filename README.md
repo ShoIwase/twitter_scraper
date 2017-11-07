@@ -5,7 +5,7 @@
 
 ## 使用環境
 * ホストOS：Windows 10 64bit
-* ゲストOS：Ubuntu 14.04 LTS 64 bit
+* ゲストOS：Ubuntu 16.04 64 bit
 * Mozilla Firefox 56.0
 * geckodriver-v0.19.1
 * selenium-3.7.0
@@ -28,9 +28,7 @@ sudo aptitude install xfonts-100dpi xfonts-75dpi xfonts-scalable xfonts-cyrillic
 sudo apt-get install fonts-ipafont-gothic fonts-ipafont-mincho
 ```
 
-Firefox用のDriverをhttps://github.com/mozilla/geckodriver/releases からダウンロードして、解凍したフォルダの中にあるgeckodriverを作業ディレクトリに配置する。またはPATHが通っているところに置く。
-
-（PATHの通ってるところに置く場合）geckodriverを解凍したディレクトリで以下を実行する。
+Firefox用のDriverをhttps://github.com/mozilla/geckodriver/releases からダウンロードして、geckodriverをPATHが通っているところに配置する。geckodriverを解凍したディレクトリで以下を実行する。
 
 ```
 sudo cp ./geckodriver /usr/local/bin
