@@ -2,6 +2,6 @@
 file=*.html
 for file in ${file}
 do
-  ruby twitter_scrape.rb < ${file} > ${file%.*}.txt
-  ruby twitter_scrape_time.rb < ${file} > ${file%.*}_time.txt
+  ruby scrape.rb < ${file} > ${file%.*}.txt
+  ruby scrape_time.rb < ${file} > ${file%.*}_time.txt
 done
