@@ -64,6 +64,3 @@ python scroll.py 2017 07 01 07 02 | ruby scrape.rb
 ```
 ## シェルスクリプトの利用
 シェルスクリプトを利用することで保存したHTMLファイル全てから一括でデータ抽出ができる。
-```
-bash scraping.sh
-```
