@@ -47,8 +47,7 @@ python scroll.py 2017 07 01 07 02 > 0701.html
 ### スクレイピングの実行（Python）
 BeautifulSoupを使うためインストールする。
 ```
-sudo pip install bs4
-sudo pip install BeautifulSoup
+sudo pip install BeautifulSoup4
 ```
 
 保存したHTMLからツイートの時間と本文をスクレイピングする。
