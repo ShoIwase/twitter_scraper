@@ -44,7 +44,19 @@ python scroll.py 2017 07 01 07 02 > 0701.html
 ```
 
 ## 入手したHTMLからスクレイピング
-### スクレイピングの準備
+### スクレイピングの実行（Python）
+BeautifulSoupを使うためインストールする。
+```
+sudo pip install bs4
+sudo pip install BeautifulSoup
+```
+
+保存したHTMLからツイートの時間と本文をスクレイピングする。
+```
+ruby scrape.py < 0701.html
+```
+
+### スクレイピングの実行(Ruby)
 Nokogiriを使うためインストールする。
 ```
 sudo add-apt-repository -y ppa:brightbox/ruby-ng
@@ -53,14 +65,10 @@ sudo apt-get -y install ruby2.1 ruby2.1-dev zlib1g-dev
 sudo gem install nokogiri
 ```
 
-### プログラムの実行
 保存したHTMLからツイートの時間と本文をスクレイピングする。
 ```
 ruby scrape.rb < 0701.html
 ```
-2つの手順を1度に行う場合は以下の通りに実行する。
-```
-python scroll.py 2017 07 01 07 02 | ruby scrape.rb
-```
+
 ## シェルスクリプトの利用
 シェルスクリプトを利用することで保存したHTMLファイル全てから一括でデータ抽出ができる。
