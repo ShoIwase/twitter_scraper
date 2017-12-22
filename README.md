@@ -52,7 +52,7 @@ sudo pip install BeautifulSoup4
 
 保存したHTMLからツイートの時間と本文をスクレイピングする。
 ```
-ruby scrape.py < 0701.html
+python scrape.py < 0701.html
 ```
 
 ### スクレイピングの実行(Ruby)
