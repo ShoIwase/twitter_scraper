@@ -66,8 +66,13 @@ sudo gem install nokogiri
 
 保存したHTMLからツイートの時間と本文をスクレイピングする。
 ```
+
 ruby scrape.rb < 0701.html
 ```
 
 ## シェルスクリプトの利用
 シェルスクリプトを利用することで保存したHTMLファイル全てから一括でデータ抽出ができる。
+```
+
+sh scraping.sh
+```
