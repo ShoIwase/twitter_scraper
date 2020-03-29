@@ -37,7 +37,7 @@ sudo cp ./geckodriver /usr/local/bin
 ### プログラムの実行
 まずXvfbの起動とディプレイの設定をする。
 ```
-sudo Xvfb :99 -ac -screen 0 1024x768x8 &
+sudo Xvfb :99 -ac -screen 0 1600x900x8 &
 export DISPLAY=:99
 ```
 
