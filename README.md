@@ -1,21 +1,18 @@
 # Twitterの検索結果をWebスクレイピング
 検索結果のHTMLを保存し、HTMLから必要なところをスクレイピングするという二段階で行う。
 
-今回は「GitHub lang:ja」の日付指定検索で試す。
-
 ## 使用環境
-* ホストOS：Windows 10 64bit
-* ゲストOS：Ubuntu 16.04 64 bit
-* Mozilla Firefox 56.0
-* geckodriver-v0.19.1
-* selenium-3.7.0
+* OS：Ubuntu 16.04.6 LTS 64 bit
+* Mozilla Firefox 60.0
+* geckodriver-v0.29.0
+* selenium-3.141.0
 
 ## 検索結果の入手
 ### Seleniumのインストール
 Twitterの検索結果をスクロールするため、Seleniumを使う。
 ```
-sudo apt-get -y install python-pip
-sudo pip install selenium
+sudo apt-get -y install python-pip3
+sudo pip3 install selenium
 ```
 
 ### Firefoxとバーチャルモニター（Xvfb）のインストール
@@ -29,18 +26,30 @@ sudo apt-get install fonts-ipafont-gothic fonts-ipafont-mincho
 Firefox用のDriverをhttps://github.com/mozilla/geckodriver/releases からダウンロードして、geckodriverをPATHが通っているところに配置する。geckodriverを解凍したディレクトリで以下を実行する。
 
 ```
-sudo cp ./geckodriver /usr/local/bin
+sudo chmod +x geckodriver
+sudo mv geckodriver /usr/local/bin
 ```
 ### プログラムの実行
 まずXvfbの起動とディプレイの設定をする。
 ```
-sudo Xvfb :99 -ac -screen 0 1024x768x8 &
+sudo Xvfb :99 -ac -screen 0 1600x900x8 &
 export DISPLAY=:99
 ```
 
-例として以下のように実行すると2017年7月1日から2017年7月2日までのツイートを検索できる。
 ```
-python scroll.py 2017 07 01 07 02 > 0701.html
+python3 scroll.py
+```
+
+実行すると下記のような入力を求められるので、値を入力する。
+```
+検索ワード：github
+開始日（YYYYMMDD）：20200202
+終了日（YYYYMMDD）：20200203
+```
+スクロール後、HTMLとスクリーンショットが保存される。
+```
+検索ワード_開始日_終了日.html
+検索ワード_開始日_終了日.png
 ```
 
 ## 入手したHTMLからスクレイピング
@@ -52,7 +61,7 @@ sudo pip install BeautifulSoup4
 
 保存したHTMLからツイートの時間と本文をスクレイピングする。
 ```
-python scrape.py < 0701.html
+python scrape.py < 取得したHTMLファイル名
 ```
 
 ### スクレイピングの実行(Ruby)
@@ -66,7 +75,7 @@ sudo gem install nokogiri
 
 保存したHTMLからツイートの時間と本文をスクレイピングする。
 ```
-ruby scrape.rb < 0701.html
+ruby scrape.rb < 取得したHTMLファイル名
 ```
 
 ## シェルスクリプトの利用

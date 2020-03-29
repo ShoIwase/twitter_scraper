@@ -11,8 +11,8 @@ for tweet in tweets:
         tweet_time = datetime.fromtimestamp(int(tweet.find('span', '_timestamp')['data-time']))
         tweet_text = tweet.find('p',{"class":'tweet-text'}).text.encode('utf8').replace("\n", "").replace(",", "")
         
-        print tweet_time,
-        print ',',
-        print tweet_text
+        print (tweet_time),
+        print (','),
+        print (tweet_text)
     else:
         continue
