@@ -36,11 +36,12 @@ sudo Xvfb :99 -ac -screen 0 1600x900x8 &
 export DISPLAY=:99
 ```
 
+`scroll.py`を実行する。
 ```
 python3 scroll.py
 ```
 
-実行すると下記のような入力を求められるので、値を入力する。
+実行すると下記のような入力を求められるので、値を入力する（下記は例）。
 ```
 検索ワード：github
 開始日（YYYYMMDD）：20200202
@@ -56,12 +57,12 @@ python3 scroll.py
 ### スクレイピングの実行（Python）
 BeautifulSoupを使うためインストールする。
 ```
-sudo pip install BeautifulSoup4
+sudo pip3 install BeautifulSoup4
 ```
 
 保存したHTMLからツイートの時間と本文をスクレイピングする。
 ```
-python scrape.py < 取得したHTMLファイル名
+python3 scrape.py < 取得したHTMLファイル名
 ```
 
 ### スクレイピングの実行(Ruby)
