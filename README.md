@@ -10,6 +10,9 @@
 * geckodriver-v0.19.1
 * selenium-3.7.0
 
+Selenium/Firefox/GeckoDriver のバージョン互換性表
+https://firefox-source-docs.mozilla.org/testing/geckodriver/Support.html
+
 ## 検索結果の入手
 ### Seleniumのインストール
 Twitterの検索結果をスクロールするため、Seleniumを使う。
